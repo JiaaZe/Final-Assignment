@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html>
+  <head>
+     <title>Demo 第16組</title>
+     <meta charset="utf-8">
+     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css">
+	   <script src="http://cdn.static.runoob.com/libs/jquery/2.1.1/jquery.min.js"></script>
+	   <script src="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+     <script type="text/javascript" src="http://cdn.webfont.youziku.com/wwwroot/js/wf/youziku.api.min.js"></script>
+     <script type="text/javascript">
+       $youziku.load(".t ,.main,#w", "13f6161f80b4475bbff1ce07e9849adc", "HanWangYenLight");
+       $youziku.draw();
+     </script>
+
+     <style>
+     #map {
+            height: 330px;
+            width: 100%;
+          }
+      ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 10px;
+        overflow: hidden;
+        background-color:	#D8D8D8;
+      }
+
+      li {
+        float: right;
+      }
+
+      li a:link,li a:visited {
+        display: inline;
+        color: #6633FF;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+      }
+
+      li a:hover,li a:active {
+        background-color: #CC3399;
+      }
+
+    </style>
+
+  </head>
+
+  <body>
+    <!-- Head  -->
+    <div class="container">
+	    <div class="row">
+      <div class="col-xs-4 col-sm-5" style="padding-top:13px">
+        <h1 style="color:#66FFCC" class = "main"><strong>部落旅遊</strong></h1>
+      </div>
+      <div class = "col-xs-4 col-sm-3" style="padding-left:0px;padding-right:0px;">
+      </br></br>
+        <a class = "text-right" href = "#">中文<a><strang>&nbsp;&nbsp;|&nbsp;&nbsp;
+        <a class = "text-right" href = "#">English<a><strang>&nbsp;&nbsp;|&nbsp;&nbsp;
+        <a class = "text-right" href = "#">日本語<a><strang>&nbsp;&nbsp;|&nbsp;&nbsp;
+        <a class = "text-right" href = "#">한국어<a><strang>
+      </div>
+      <div class="col-xs-4 col-sm-offset"style="padding-top:13px;padding-left:40px;padding-right:0px;">
+      </br>
+  		  <div class="input-group">
+  					<input type="text" class="form-control"  placeholder="输入要搜尋的內容">
+              &nbsp;&nbsp;
+              <button id = "login" class="btn btn-default" type="button">
+  							登入
+  						</button>
+              &nbsp;&nbsp;
+              <button id = "singup" class="btn btn-default" type="button">
+  							註冊
+  						</button>
+  				</div>
+      </div>
+	    </div>
+    </div>
+    <hr style="height:1px;border:none;border-top:1px solid #111111;" />
+    <!-- Nav-->
+    <ul >
+      <li><a href="#">幫助中心</a></li>
+      <li><a href="#">會員功能</a></li>
+      <li><a href="#">旅遊資訊</a></li>
+      <li><a href="#">交通資訊</a></li>
+      <li><a href="#">旅遊攻略</a></li>
+      <li><a href="#">景點介紹</a></li>
+    </ul>
+    <!--mini title-->
+    <div class="container">
+      <div class="row">
+      <div class="col-xs-4 col-sm-2" style="padding-top:20px;padding-left:0">
+        <h2 style="color:pink;font-size:210%"  class = "t"><b>交通資訊</b></h2>
+      </div>
+      </div>
+    </div>
+
+    <!--content-->
+
+    <div class="container">
+	  <div class="row">
+		<div class="col-xs-4 col-sm-11">
+			<div class="tabbable" >
+				<ul class="nav nav-tabs" style="background-color:white;">
+					<li class="active" >
+						<a href="#zijia" data-toggle="tab">自駕</a>
+					</li>
+					<li>
+						<a href="#gongjiao" data-toggle="tab">公共交通</a>
+					</li>
+          <li>
+						<a href="#baoche" data-toggle="tab">包車</a>
+					</li>
+				</ul>
+
+				<div class="tab-content" style="border:1px solid black;height:350px;margin-bottom:20px;overflow:scroll;">
+					<div class="tab-pane active" id="zijia">
+            <h4><strong style="color:blue">國道三號行駛路線</strong></h4>
+            <strong>建議路線</strong><br>
+            <span style="color:#000080;">國道三號(中二高)→霧峰系統214K→國道六號起點0k→埔里端出口(國六終點)→左轉台14線→霧社(Y字路口左轉)→台14甲線→清境農場</span><br>
+            <br>駕車行駛於國道3號，並於「霧峰系統交流道214K」下匝道接往國道6號，持續行駛約39km前往埔里端出口後，左轉往台14線行駛約21km後到達「霧社」，並於霧社Y字路口左轉台14甲，繼續行駛約8km即可抵達清境農場。<br>
+                    &nbsp;
+
+            <h4><strong style="color:blue">國道一號行駛路線</strong></h4>
+            <strong>建議路線</strong><br>
+            <span style="color:#000080;">國道一號→彰化系統交流道192K→轉國道三號南下→霧峰系統214K→國道六號起點0K→埔里端出口(國道六號終點)→左轉台14線→霧社(Y字路口左轉台14甲)→清境農場</span><br>
+            <br>駕車行駛於國道1號，並於「彰化系統交流道192K」下匝道接往國道3號南下，持續往南行駛約18km於「霧峰系統交流道214K」下匝道接往國道6號，持續行駛約39km前往埔里端出口後，左轉往台14線行駛約21km後到達「霧社」，並於霧社Y字路口左轉台14甲，繼續行駛約8km即可抵達清境農場。<br>
+
+
+            <h4><strong style="color:blue">由東部至清境農場</strong></h4>
+            <strong>建議路線</strong><br>
+            <span style="color:#000080;">花蓮→台8線中橫公路→大禹嶺→台14甲線→合歡山→翠峰→清境農場</span><br>
+            <br>
+            <br>
+
+              <div id="map"></div>
+              <script>
+                function initMap() {
+                  var uluru = {lat: 24.016772, lng: 121.127893};
+                  var map = new
+                  google.maps.Map(document.getElementById('map'), {
+                    zoom: 14,
+                    center: uluru
+                  });
+                  var marker = new google.maps.Marker({
+                    position: uluru,
+                    map: map
+                  });
+              }
+            </script>
+            <script async defer
+            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDbEftm3aTKij1PSYnpk_VEjRLGNLwpLtk&callback=initMap">
+            </script>
+					</div>
+					<div class="tab-pane" id="gongjiao">
+
+          <h4><strong style="color:blue">台北地區</strong></h4>
+            由台北轉運站搭乘國光客運 → 埔里 → 換南投客運往松崗、翠峰至清境農場。<br>
+              (全程約260公里，車行約5小時)<br>
+          <a href="http://www.kingbus.com.tw/" target="_blank" title="連結至國光客運網站(另開視窗)">連結至國光客運網站(另開視窗)</a><br>
+          <a href="http://www.ntbus.com.tw/" target="_blank" title="連結至南投客運網站(另開視窗)">連結至南投客運網站(另開視窗)</a><br><br>
+
+        <h4><strong style="color:blue">台中地區、埔里地區</strong></h4>
+
+        <br><strong>&nbsp;臺中火車站</strong><br/><br/>
+          搭乘南投客運【臺中—埔里】至清境農場各站，每日08:25 至 12:25行駛，共6班。<br>
+          搭乘南投客運【6670臺中—高鐵臺中站—埔里—魚池—日月潭】、南投/臺中客運【6899臺中—埔里】、全航客運【6268臺中—埔里】，至埔里轉運站(經國道6號) 轉乘，每20至30分鐘1班。<br>
+        <a href="http://twtraffic.tra.gov.tw/twrail/" target="_blank" title="連結至台鐵網站(另開視窗)">連結至台鐵網站(另開視窗)</a><br>&nbsp;
+
+	       <br><strong>&nbsp;高鐵臺中烏日站</strong><br/><br/>
+
+          5號出口 3號月台搭乘南投客運【臺中—埔里】至清境農場各站，每日08:25至12:25行駛，共6班。<br>
+          搭乘南投客運【6670】至埔里轉運站(經國道6號)再轉乘，每20至30分鐘1班。<br>
+        <a href="http://www.thsrc.com.tw/index.html" target="_blank" title="連結至台灣高鐵網站(另開視窗)">連結至台灣高鐵網站(另開視窗)</a><br>&nbsp;
+
+        <br><strong>&nbsp;埔里轉運站</strong><br/><br/>
+        搭乘南投客運【6658埔里─翠峰】、【6659埔里─松崗】、【6664埔里─清境農場】至清境農場各站，每日06:00至16:30行駛，共13班。<br><br>
+        <span style="color:#000080;">※ 以上路線與車次時間僅供參考，最新搭乘資訊請上各客運公司網站查詢。</span><br>
+        <a href="http://www.ntbus.com.tw/" target="_blank" title="連結至南投客運網站(另開視窗)">連結至南投客運網站(另開視窗)</a><br>&nbsp;
+
+        <h4><strong style="color:blue">e-go 台灣觀光巴士</strong></h4>
+          由台北出發<br>
+          06:45 台北火車站 → 07:30 桃園 → 08:10 新竹 → 09:10 台中中港轉運站 → 09:40 烏日高鐵站 → 草屯 → 埔里 → 霧社 → 清境(約11:30)<br>
+        <a href="http://www.e-go.com.tw/cht/index.php" target="_blank" title="連結至e-go網站(另開視窗)">連結至e-go網站(另開視窗)</a><br>&nbsp;
+
+        <h4><strong style="color:blue">OKBUS臺灣旅遊巴士</strong></h4>
+          台中(清泉崗)機場直達清境<br>
+          接機時間：10:20、12:00、14:30、服務電話：049-2801399<br>
+        <a href="http://www.cingjingbus.tw/" target="_blank" title="連結至OKBUS網站(另開視窗)">連結至OKBUS網站(另開視窗)</a>
+					</div>
+          <div class="tab-pane" id="baoche">
+						<h4><strong style="color:blue	">台北至清境包車單接送</strong></h4>
+            <a style="color:#00CC33" href="http://www.mafengwo.cn/sales/2212447.html?cid=1010402&sourceFrom=zhuti-16405-2000">點我開啟鏈接</a><br/><br/>
+            <h4><strong style="color:blue">台中至清境拼車直達</strong></h4>
+            <a style="color:#00CC33" href="http://www.mafengwo.cn/sales/2131716.html?cid=1010402&sourceFrom=zhuti-16405-2000">點我開啟鏈接</a>
+					</div>
+				</div>
+			</div>
+		</div>
+    <div class = "col-xs-4 col-sm-12">
+        <br/><br/><br/>
+        <hr style="height:1px;border:none;border-top:1px solid #111111;" />
+        <p style="text-align:center">Web程式設計 第16組</p>
+    </div>
+
+	  </div>
+    </div>
+
+
+
+  </body>
+</html>
