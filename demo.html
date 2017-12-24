@@ -9,6 +9,11 @@
   	 <!-- Bootstrap -->
   	 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js"></script>
 
+     <script type="text/javascript" src="http://cdn.webfont.youziku.com/wwwroot/js/wf/youziku.api.min.js"></script>
+    <script type="text/javascript">
+       $youziku.load(".t ,.main", "13f6161f80b4475bbff1ce07e9849adc", "HanWangYenLight");
+       $youziku.draw();
+    </script>
      <style>
 
       ul {
@@ -34,15 +39,15 @@
       li a:hover,li a:active {
         background-color: #CC3399;
       }
-</style>
+    </style>
 
   </head>
   <body>
     <!-- Head  -->
     <div class="container">
-	  <div class="row">
+	    <div class="row">
       <div class="col-xs-4 col-sm-5" style="padding-top:13px">
-        <h1><strong>部落旅遊</strong></h1>
+        <h1 style="color:#66FFCC" class = "main"><strong>部落旅遊</strong></h1>
       </div>
       <div class = "col-xs-4 col-sm-3" style="padding-left:0px;padding-right:0px">
       </br></br>
@@ -65,10 +70,10 @@
   						</button>
   				</div>
       </div>
-	  </div>
+	    </div>
     </div>
     <hr style="height:1px;border:none;border-top:1px solid #111111;" />
-
+    <!-- Nav-->
     <ul>
       <li><a href="#">幫助中心</a></li>
       <li><a href="#">會員功能</a></li>
@@ -77,6 +82,13 @@
       <li><a href="#">旅遊攻略</a></li>
       <li><a href="#">景點介紹</a></li>
     </ul>
+    <div class="container">
+      <div class="row">
+      <div class="col-xs-4 col-sm-2" style="padding-top:20px;padding-left:0">
+        <h2 style="color:pink;font-size:210%"  class = "t"><b>交通資訊</b></h2>
+      </div>
+      </div>
+    </div>
 
   </body>
 </html>
