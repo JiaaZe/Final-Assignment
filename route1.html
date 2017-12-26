@@ -17,7 +17,13 @@
        }
 
      </style>
+     <script>
+      $(document).ready(function(){
+        $(".flash").fadeOut(5000).fadeIn(5000);
+	         setTimeout(arguments.callee,200);
 
+      });
+      </script>
   </head>
   <body>
     <!-- Head  -->
@@ -128,8 +134,19 @@
         </li>
       </ul>
     </div>
-
+    <div class="row">
+      <div class="col-sm-4">
+        <img  class="flash" height="180" width="270" src="peo.png" style="display:inline;">
+      </div>
+      <div class="col-sm-4">
+        <img  class="flash" height="180" width="270" src="peo.png" style="display:inline;">
+      </div>
+      <div class="col-sm-4">
+        <img class="flash" height="180" width="270" src="peo.png" style="display:inline;">
+      </div>
+    </div>
 
     </div>
   </body>
 </html>
+
