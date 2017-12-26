@@ -85,56 +85,61 @@
   <div class="r-title">
       <h2 class="r-title" style="text-align: left">仁愛鄉2条路线</h2>
   </div>
-  <div class="line-cards">
-  <h3>
-      <a data-t="路线标题" href="/mdd/cityroute/10684_122.html" target="_blank">
-      <span class="num">1</span>
-      仁愛鄉2日经典玩法
-    </a>
-  </h3>
-    <div id="map">
-      <script>
-        function initMap() {
-          var uluru = {lat: 24.060362, lng: 121.163128};
-          var map = new
-            google.maps.Map(document.getElementById('map'), {
-              zoom: 13,
-              center: uluru
-            });
-       var marker = new google.maps.Marker({
-        position: uluru,
-        map: map
-      });
-    }
-      </script>
-      <script async defer
-      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAyvvO2mOVSmoP5A_1Abm_xc-LzoAp8CCA&callback=initMap">
-      </script>
-    </div>
-      <dl class="info">
-        <dt>
-          <a target="_blank" style="color:#333;text-decoration:none">
-            <span>46%</span>
-            初次訪問仁愛鄉的Tribers會選擇這條路線
-          </a>
-        </dt>
-        <dd>
-          <a class="cityline" target="_blank" style="color:#333;text-decoration:none">
-             D1
-            <span>清境農場</span>
-            <span class="arrow">-></span>
-            <span>清境小瑞士花園</span>
-          </a>
-          <a class="cityline" target="_blank" style="color:#333;text-decoration:none">
-             D1
-            <span>合歡山</span>
-            <span class="arrow">-></span>
-            <span>奧萬大國家森林遊樂園</span>
-          </a>
-          <a data-t="查看路线" class="btn-view" href="route1.html" target="_blank">查看&gt;</a>
-        </dd>
-      </dl>
-    </div>
+  <div class="row">
+		<div class="col-sm-6">
+		  <div class="line-cards">
+		  <h3>
+			  <a data-t="路线标题" href="/mdd/cityroute/10684_122.html" target="_blank">
+			  <span class="num">1</span>
+			  仁愛鄉2日经典玩法
+			</a>
+		  </h3>
+			<div id="map">
+			  <script>
+				function initMap() {
+				  var uluru = {lat: 24.060362, lng: 121.163128};
+				  var map = new
+					google.maps.Map(document.getElementById('map'), {
+					  zoom: 13,
+					  center: uluru
+					});
+			   var marker = new google.maps.Marker({
+				position: uluru,
+				map: map
+			  });
+			}
+			  </script>
+			  <script async defer
+			  src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAyvvO2mOVSmoP5A_1Abm_xc-LzoAp8CCA&callback=initMap">
+			  </script>
+			</div>
+			
+			  <dl class="info">
+				<dt>
+				  <a target="_blank" style="color:#333;text-decoration:none">
+					<span>46%</span>
+					初次訪問仁愛鄉的Tribers會選擇這條路線
+				  </a>
+				</dt>
+				<dd>
+				  <a class="cityline" target="_blank" style="color:#333;text-decoration:none">
+					 D1
+					<span>清境農場</span>
+					<span class="arrow">-></span>
+					<span>清境小瑞士花園</span>
+				  </a>
+				  <a class="cityline" target="_blank" style="color:#333;text-decoration:none">
+					 D1
+					<span>合歡山</span>
+					<span class="arrow">-></span>
+					<span>奧萬大國家森林遊樂園</span>
+				  </a>
+				  <a data-t="查看路线" class="btn-view" href="route1.html" target="_blank">查看&gt;</a>
+				</dd>
+			  </dl>
+			</div>
+		</div>
+		<div class="col-sm-6">
     <div class="line-cards line-cards-right">
       <h3>
           <a data-t="路线标题" href="/mdd/cityroute/10684_122.html" target="_blank">
@@ -161,7 +166,8 @@
         </dd>
       </dl>
     </div>
-
+	</div>
+	</div>
 
   </div>
 
