@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+  <head>
+     <title>Demo 第16組</title>
+     <meta charset="utf-8">
+     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  		<!--Jquery-->
+  	 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  	 <!-- Bootstrap -->
+  	 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js"></script>
+
+    <link href="http://css.mafengwo.net/css/cv/css+mdd+line-details2:css+mdd+map-mark.v2^Z1Q^1492702234.css" rel="stylesheet" type="text/css"/>
+     <style>
+       #map ,img{
+        height:250px;
+        width: 400px;
+       }
+
+     </style>
+     <script>
+      $(document).ready(function(){
+        $(".flash").fadeOut(5000).fadeIn(5000);
+	         setTimeout(arguments.callee,200);
+
+      });
+      </script>
+  </head>
+  <body>
+    <!-- Head  -->
+    <div class="container">
+	  <div class="row">
+      <div class="col-xs-4 col-sm-5" style="padding-top:13px">
+        <h1><strong>部落旅遊</strong></h1>
+      </div>
+      <div class = "col-xs-4 col-sm-3" style="padding-left:0px;padding-right:0px">
+      </br></br>
+        <a class = "text-right" href = "#">中文<a><strang>&nbsp;&nbsp;|&nbsp;&nbsp;
+        <a class = "text-right" href = "#">English<a><strang>&nbsp;&nbsp;|&nbsp;&nbsp;
+        <a class = "text-right" href = "#">日本語<a><strang>&nbsp;&nbsp;|&nbsp;&nbsp;
+        <a class = "text-right" href = "#">한국어<a><strang>
+      </div>
+      <div class="col-xs-4 col-sm-offset"style="padding-top:13px;padding-left:40px;padding-right:0px">
+      </br>
+  		  <div class="input-group">
+  					<input type="text" class="form-control"  placeholder="输入要搜尋的內容">
+              &nbsp;&nbsp;
+              <button id = "login" class="btn btn-default" type="button">
+  							登入
+  						</button>
+              &nbsp;&nbsp;
+              <button id = "singup" class="btn btn-default" type="button">
+  							註冊
+  						</button>
+  				</div>
+      </div>
+	  </div>
+    <h1>仁愛鄉2日经典玩法</h1>
+    <span class="season">
+    <i class="icon-season"></i>
+    最佳季节：<strong>10月-次年5月</strong>
+    </span>
+    <div class="row row-overview" data-anchor="overview">
+         <div class="line-intro clearfix">
+             <div class="intro-word">
+                 <dl class="view">
+                     <dt>
+                         路线概览
+                     </dt>
+                     <dd>
+                       <div class="J_overview" style="vidibility:hidden">
+                         <span class="num">D1</span>
+                         <p class="day">
+                           <a>清境農場青青草原（3h）</a>
+                           <span class="arrow">→</span>
+                           <a>纸箱王创意园区(清境小瑞士花园店)(2h)</a>
+                           <span class="arrow">→</span>
+                           <a>清境农场小瑞士花园(1.5h)</a>
+                         </p>
+                        </div>
+                        <div class="J_overview" style="vidibility:hidden">
+                          <span class="num">D2</span>
+                          <p class="day">
+                            <a>合歡山（4h）</a>
+                            <span class="arrow">→</span>
+                            <a>奧萬大國家森林遊樂園(3h)</a>
+                          </p>
+                         </div>
+                      </dd>
+                    </dl>
+                    <ul class="note clearfix"   style="background-color:#FFFFFF">
+                      <li class="tips onetip" >
+                        <h3>總結</h3>
+                         <p>清境农场坐拥在群山之间，视野广阔，近看可欣赏奇莱山日出奇景，远眺可观合欢山积雪。这里一天之中景色各异，清晨山岚云雾飘渺，夕阳晚霞缤纷万变，夜晚还可以仰望灿烂的银河星空。</p>
+                       </li>
+                     </ul>
+                   </div>
+                   <div id="map">
+                     <script>
+                       function initMap() {
+                         var uluru = {lat: 24.060362, lng: 121.163128};
+                         var map = new
+                           google.maps.Map(document.getElementById('map'), {
+                             zoom: 13,
+                             center: uluru
+                           });
+                      var marker = new google.maps.Marker({
+                       position: uluru,
+                       map: map
+                     });
+                   }
+                     </script>
+                     <script async defer
+                      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAyvvO2mOVSmoP5A_1Abm_xc-LzoAp8CCA&callback=initMap">
+                     </script>
+                   </div>
+        </div>
+    </div>
+    <div class="poi-figure poi-play figure-slide">
+      <ul class="play-list figure-box" style="width: 855px;left:0px;">
+        <li class="figure">
+          <a data_t="poi" class="figure" target="_blank" href="http://www.mafengwo.cn/poi/34069.html">
+            <img class="lazy" height="180" width="270" src="sheep.png" style="display:inline;">
+          </a>
+        </li>
+        <li class="figure">
+          <a data_t="poi" class="figure" target="_blank" href="http://www.mafengwo.cn/poi/34069.html">
+            <img class="lazy" height="180" width="270" src="Swi.png" style="display:inline;">
+          </a>
+        </li>
+        <li class="figure">
+          <a data_t="poi" class="figure" target="_blank" href="http://www.mafengwo.cn/poi/34069.html">
+            <img class="lazy" height="180" width="270" src="mountain.png" style="display:inline;">
+          </a>
+        </li>
+      </ul>
+    </div>
+    <div class="row">
+      <div class="col-sm-4">
+        <img  class="flash" height="180" width="270" src="peo.png" style="display:inline;">
+      </div>
+      <div class="col-sm-4">
+        <img  class="flash" height="180" width="270" src="peo.png" style="display:inline;">
+      </div>
+      <div class="col-sm-4">
+        <img class="flash" height="180" width="270" src="peo.png" style="display:inline;">
+      </div>
+    </div>
+
+    </div>
+  </body>
+</html>
+
