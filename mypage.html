@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Demo 第16組</title>
+    <meta charset="utf-8">
+     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css">
+  		<!--Jquery-->
+  	 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  	 <!-- Bootstrap -->
+  	 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js"></script>
+
+     <script type="text/javascript" src="http://cdn.webfont.youziku.com/wwwroot/js/wf/youziku.api.min.js"></script>
+     <link href="http://css.mafengwo.net/css/cv/css+mdd+place-v2:css+mdd+map-mark.v2^YFM^1510136297.css" rel="stylesheet" type="text/css"/>
+
+
+      <script type="text/javascript">
+         $youziku.load(".t ,.main", "13f6161f80b4475bbff1ce07e9849adc", "HanWangYenLight");
+         $youziku.draw();
+      </script>
+     <style>
+     #map{
+      height:250px;
+      width: 400px;
+     }
+      ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 10px;
+        overflow: hidden;
+        background-color:	#D8D8D8;
+      }
+      li {
+        float: right;
+      }
+      li a:link,li a:visited {
+        display: inline;
+        color: #6633FF;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+      }
+      li a:hover,li a:active {
+        background-color: #CC3399;
+      }
+    </style>
+
+
+</head>
+<body>
+
+<div class="container">
+  <div class="row">
+    <div class="col-xs-4 col-sm-5" style="padding-top:13px">
+      <h1><strong>部落旅遊</strong></h1>
+    </div>
+    <div class = "col-xs-4 col-sm-3" style="padding-left:0px;padding-right:0px">
+    </br></br>
+      <a class = "text-right" href = "#">中文<a><strang>&nbsp;&nbsp;|&nbsp;&nbsp;
+      <a class = "text-right" href = "#">English<a><strang>&nbsp;&nbsp;|&nbsp;&nbsp;
+      <a class = "text-right" href = "#">日本語<a><strang>&nbsp;&nbsp;|&nbsp;&nbsp;
+      <a class = "text-right" href = "#">한국어<a><strang>
+    </div>
+    <div class="col-xs-4 col-sm-offset"style="padding-top:13px;padding-left:40px;padding-right:0px">
+    </br>
+		  <div class="input-group">
+					<input type="text" class="form-control"  placeholder="输入要搜尋的內容">
+            &nbsp;&nbsp;
+            <button id = "login" class="btn btn-default" type="button">
+							登入
+						</button>
+            &nbsp;&nbsp;
+            <button id = "singup" class="btn btn-default" type="button">
+							註冊
+						</button>
+				</div>
+    </div>
+  </div>
+  <hr style="height:1px;border:none;border-top:1px solid #111111;" />
+
+  <ul>
+    <li><a href="#">幫助中心</a></li>
+    <li><a href="#">會員功能</a></li>
+    <li><a href="#">旅遊資訊</a></li>
+    <li><a href="#">交通資訊</a></li>
+    <li><a href="#">旅遊攻略</a></li>
+    <li><a href="#">景點介紹</a></li>
+  </ul>
+
+  <h1 class="text-left">旅遊攻略</h1>
+  <div class="r-title">
+      <h2 class="r-title" style="text-align: left">仁愛鄉2条路线</h2>
+  </div>
+  <div class="row">
+		<div class="col-sm-6">
+		  <div class="line-cards">
+		  <h3>
+			  <a data-t="路线标题" href="/mdd/cityroute/10684_122.html" target="_blank">
+			  <span class="num">1</span>
+			  仁愛鄉2日经典玩法
+			</a>
+		  </h3>
+			<div id="map">
+			  <script>
+				function initMap() {
+				  var uluru = {lat: 24.060362, lng: 121.163128};
+				  var map = new
+					google.maps.Map(document.getElementById('map'), {
+					  zoom: 13,
+					  center: uluru
+					});
+			   var marker = new google.maps.Marker({
+				position: uluru,
+				map: map
+			  });
+			}
+			  </script>
+			  <script async defer
+			  src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAyvvO2mOVSmoP5A_1Abm_xc-LzoAp8CCA&callback=initMap">
+			  </script>
+			</div>
+
+			  <dl class="info">
+				<dt>
+				  <a target="_blank" style="color:#333;text-decoration:none">
+					<span>46%</span>
+					初次訪問仁愛鄉的Tribers會選擇這條路線
+				  </a>
+				</dt>
+				<dd>
+				  <a class="cityline" target="_blank" style="color:#333;text-decoration:none">
+					 D1
+					<span>清境農場</span>
+					<span class="arrow">-></span>
+					<span>清境小瑞士花園</span>
+				  </a>
+				  <a class="cityline" target="_blank" style="color:#333;text-decoration:none">
+					 D1
+					<span>合歡山</span>
+					<span class="arrow">-></span>
+					<span>奧萬大國家森林遊樂園</span>
+				  </a>
+				  <a data-t="查看路线" class="btn-view" href="route1.html" target="_blank">查看&gt;</a>
+				</dd>
+			  </dl>
+			</div>
+		</div>
+		<div class="col-sm-6">
+    <div class="line-cards line-cards-right">
+      <h3>
+          <a data-t="路线标题" href="/mdd/cityroute/10684_122.html" target="_blank">
+          <span class="num">2</span>
+          仁愛鄉1日快速玩法
+        </a>
+      </h3>
+      <img src="wulin.png" height="250px" width="400px">
+      <dl class="info">
+        <dt>
+          <a target="_blank" style="color:#333;text-decoration:none">
+            <span>48%</span>
+            初次訪問仁愛鄉的Tribers會選擇這條路線
+          </a>
+        </dt>
+        <dd>
+          <a class="cityline" target="_blank" style="color:#333;text-decoration:none">
+             D1
+            <span>清境農場</span>
+            <span class="arrow">-></span>
+            <span>武嶺</span>
+          </a>
+          <a data-t="查看路线" class="btn-view" href="route2.html" target="_blank">查看&gt;</a>
+        </dd>
+      </dl>
+    </div>
+	</div>
+	</div>
+
+  </div>
+
+
+</body>
+</html>
